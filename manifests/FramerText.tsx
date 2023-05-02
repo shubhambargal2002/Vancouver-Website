@@ -24,6 +24,7 @@ const FramerText = React.forwardRef<
 	const underlineVariants = {
 		mouseleave: {
 			backgroundColor: props.custom.nonHoverColor || "#000000",
+			transition: { duration: props.custom.duration ?? 2 },
 			width: "0%",
 		},
 		mouseenter: {

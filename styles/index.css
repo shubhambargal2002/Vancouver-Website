@@ -4,3 +4,11 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.FramerFlex63, .FramerFlex66, .FramerFlex68, .FramerFlex69, .FramerFlex102, .FramerFlex110, .FramerFlex137{
+    background-image: linear-gradient(90deg, #dec880, #fff 31%, #ff347d 60%, #827ded);
+}
+
+.Input5::-webkit-input-placeholder, .Input6::-webkit-input-placeholder{
+    color: gray;
+}
