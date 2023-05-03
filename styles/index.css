@@ -1,4 +1,4 @@
-.TextBox2, .TextBox15{
+.TextBox2, .TextBox15, .TextBox139, .TextBox142{
     background-image: linear-gradient(104deg, #dec880, #fff 23%, #ff347d 50%, #827ded);
     -webkit-background-clip: text;
     background-clip: text;
@@ -12,3 +12,19 @@
 .Input5::-webkit-input-placeholder, .Input6::-webkit-input-placeholder{
     color: gray;
 }
+
+.Flex37::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* .Flex37::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.Flex37::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+.Flex37::-webkit-scrollbar-thumb:hover {
+background: #555; 
+} */
