@@ -18,11 +18,11 @@ const FramerFlex = React.forwardRef<
 			initialOpacity?: number;
 			finalOpacity?: number;
 			threshold?: number;
-            hoverBackgroundColor?: string;
-            hoverColor?: string;
+			hoverBackgroundColor?: string;
+			hoverColor?: string;
 			duration?: string;
 		};
-        className?: string;
+		className?: string;
 	}
 >((props, ref) => {
 	const internalRef = useRef<HTMLDivElement>(null);
@@ -43,31 +43,32 @@ const FramerFlex = React.forwardRef<
 			left: props.custom.finalLeft,
 			right: props.custom.finalRight,
 			bottom: props.custom.finalBottom,
-			transition:{duration: props.custom.duration}
+			transition: { duration: props.custom.duration },
 		},
-        whileHover:{
-            backgroundColor: props.custom.hoverBackgroundColor,
-            color: props.custom.hoverColor
-        }
+		whileHover: {
+			backgroundColor: props.custom.hoverBackgroundColor,
+			color: props.custom.hoverColor,
+		},
 	};
 
 	const observer = useMemo(() => {
-		return new IntersectionObserver(
-			(entries) => {
-				console.log(entries);
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						// animation start
-						controls.start("inView");
-					}
-				});
-			},
-			{ threshold: props.custom.threshold ?? 0.4 }
-		);
+		if (typeof window !== "undefined") {
+			return new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							// animation start
+							controls.start("inView");
+						}
+					});
+				},
+				{ threshold: props.custom.threshold ?? 0.4 }
+			);
+		}
 	}, [controls, props.custom.threshold]);
 
 	useEffect(() => {
-		if (internalRef && internalRef.current) {
+		if (internalRef && internalRef.current && observer !== undefined) {
 			observer.observe(internalRef.current);
 		}
 	}, []);
@@ -80,12 +81,12 @@ const FramerFlex = React.forwardRef<
 	return (
 		<motion.div
 			ref={internalRef}
-            className={props.className}
+			className={props.className}
 			style={{ ...props.styles, display: "flex", position: "relative" }}
 			variants={variations}
 			initial="initial"
 			animate={controls}
-            whileHover={"whileHover"}
+			whileHover={"whileHover"}
 		>
 			{props.children}
 		</motion.div>
