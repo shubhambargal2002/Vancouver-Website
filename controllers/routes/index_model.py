@@ -439,6 +439,7 @@ class Page:
 		self.Flex176 = state["Flex176"] if "Flex176" in state else None
 		self.Flex177 = state["Flex177"] if "Flex177" in state else None
 		self.Image69 = state["Image69"] if "Image69" in state else None
+		self.Image70 = state["Image70"] if "Image70" in state else None
 		self._setter_access_tracker = {}
 		self._getter_access_tracker = {}
   
@@ -4267,6 +4268,15 @@ class Page:
 	def Image69(self, new_state):
 		self._setter_access_tracker["Image69"] = {}
 		self._Image69 = Image(new_state)
+
+	@property
+	def Image70(self):
+		self._getter_access_tracker["Image70"] = {}
+		return self._Image70
+	@Image70.setter
+	def Image70(self, new_state):
+		self._setter_access_tracker["Image70"] = {}
+		self._Image70 = Image(new_state)
   
 	def _to_json_fields(self):
 		return {
@@ -4693,6 +4703,7 @@ class Page:
 			"Flex175": self._Flex175,
 			"Flex176": self._Flex176,
 			"Flex177": self._Flex177,
-			"Image69": self._Image69
+			"Image69": self._Image69,
+			"Image70": self._Image70
 			}
   
