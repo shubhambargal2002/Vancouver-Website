@@ -440,6 +440,14 @@ class Page:
 		self.Flex177 = state["Flex177"] if "Flex177" in state else None
 		self.Image69 = state["Image69"] if "Image69" in state else None
 		self.Image70 = state["Image70"] if "Image70" in state else None
+		self.FramerFlex144 = state["FramerFlex144"] if "FramerFlex144" in state else None
+		self.FramerFlex145 = state["FramerFlex145"] if "FramerFlex145" in state else None
+		self.FramerFlex146 = state["FramerFlex146"] if "FramerFlex146" in state else None
+		self.FramerFlex147 = state["FramerFlex147"] if "FramerFlex147" in state else None
+		self.FramerFlex148 = state["FramerFlex148"] if "FramerFlex148" in state else None
+		self.FramerFlex149 = state["FramerFlex149"] if "FramerFlex149" in state else None
+		self.FramerFlex150 = state["FramerFlex150"] if "FramerFlex150" in state else None
+		self.FramerFlex151 = state["FramerFlex151"] if "FramerFlex151" in state else None
 		self._setter_access_tracker = {}
 		self._getter_access_tracker = {}
   
@@ -4277,6 +4285,78 @@ class Page:
 	def Image70(self, new_state):
 		self._setter_access_tracker["Image70"] = {}
 		self._Image70 = Image(new_state)
+
+	@property
+	def FramerFlex144(self):
+		self._getter_access_tracker["FramerFlex144"] = {}
+		return self._FramerFlex144
+	@FramerFlex144.setter
+	def FramerFlex144(self, new_state):
+		self._setter_access_tracker["FramerFlex144"] = {}
+		self._FramerFlex144 = FramerFlex(new_state)
+
+	@property
+	def FramerFlex145(self):
+		self._getter_access_tracker["FramerFlex145"] = {}
+		return self._FramerFlex145
+	@FramerFlex145.setter
+	def FramerFlex145(self, new_state):
+		self._setter_access_tracker["FramerFlex145"] = {}
+		self._FramerFlex145 = FramerFlex(new_state)
+
+	@property
+	def FramerFlex146(self):
+		self._getter_access_tracker["FramerFlex146"] = {}
+		return self._FramerFlex146
+	@FramerFlex146.setter
+	def FramerFlex146(self, new_state):
+		self._setter_access_tracker["FramerFlex146"] = {}
+		self._FramerFlex146 = FramerFlex(new_state)
+
+	@property
+	def FramerFlex147(self):
+		self._getter_access_tracker["FramerFlex147"] = {}
+		return self._FramerFlex147
+	@FramerFlex147.setter
+	def FramerFlex147(self, new_state):
+		self._setter_access_tracker["FramerFlex147"] = {}
+		self._FramerFlex147 = FramerFlex(new_state)
+
+	@property
+	def FramerFlex148(self):
+		self._getter_access_tracker["FramerFlex148"] = {}
+		return self._FramerFlex148
+	@FramerFlex148.setter
+	def FramerFlex148(self, new_state):
+		self._setter_access_tracker["FramerFlex148"] = {}
+		self._FramerFlex148 = FramerFlex(new_state)
+
+	@property
+	def FramerFlex149(self):
+		self._getter_access_tracker["FramerFlex149"] = {}
+		return self._FramerFlex149
+	@FramerFlex149.setter
+	def FramerFlex149(self, new_state):
+		self._setter_access_tracker["FramerFlex149"] = {}
+		self._FramerFlex149 = FramerFlex(new_state)
+
+	@property
+	def FramerFlex150(self):
+		self._getter_access_tracker["FramerFlex150"] = {}
+		return self._FramerFlex150
+	@FramerFlex150.setter
+	def FramerFlex150(self, new_state):
+		self._setter_access_tracker["FramerFlex150"] = {}
+		self._FramerFlex150 = FramerFlex(new_state)
+
+	@property
+	def FramerFlex151(self):
+		self._getter_access_tracker["FramerFlex151"] = {}
+		return self._FramerFlex151
+	@FramerFlex151.setter
+	def FramerFlex151(self, new_state):
+		self._setter_access_tracker["FramerFlex151"] = {}
+		self._FramerFlex151 = FramerFlex(new_state)
   
 	def _to_json_fields(self):
 		return {
@@ -4704,6 +4784,14 @@ class Page:
 			"Flex176": self._Flex176,
 			"Flex177": self._Flex177,
 			"Image69": self._Image69,
-			"Image70": self._Image70
+			"Image70": self._Image70,
+			"FramerFlex144": self._FramerFlex144,
+			"FramerFlex145": self._FramerFlex145,
+			"FramerFlex146": self._FramerFlex146,
+			"FramerFlex147": self._FramerFlex147,
+			"FramerFlex148": self._FramerFlex148,
+			"FramerFlex149": self._FramerFlex149,
+			"FramerFlex150": self._FramerFlex150,
+			"FramerFlex151": self._FramerFlex151
 			}
   
