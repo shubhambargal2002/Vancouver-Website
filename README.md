@@ -1,4 +1,4 @@
-# venturecopilot.ai
+# venturecopilot.app
 
 ## Setup
 
